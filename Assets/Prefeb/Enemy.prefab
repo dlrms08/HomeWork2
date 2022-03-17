@@ -5252,6 +5252,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9d86e56954247c88270be863937112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLife: 5
+  fireRate: 3
+  shotSpawn: {fileID: 0}
+  speed: 1
+  rotSpeed: 5
+  canAttack: 0
 --- !u!1 &257347097542381458
 GameObject:
   m_ObjectHideFlags: 0
