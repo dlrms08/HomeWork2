@@ -5255,7 +5255,7 @@ MonoBehaviour:
   maxLife: 5
   fireRate: 3
   shotSpawn: {fileID: 0}
-  speed: 1
+  speed: 2
   rotSpeed: 5
   canAttack: 0
 --- !u!1 &257347097542381458

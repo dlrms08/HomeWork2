@@ -69,7 +69,7 @@ public class EnemyManager : MonoBehaviour
     {
         if(other.CompareTag("Bullet") && other.GetComponent<BulletScript>().bulletType != BulletScript.BulletType.Enemy)
         {
-            if(!GameManager.instance.skillInfos[2].enable)
+            if(!GameManager.instance.skills[2])
                 other.gameObject.SetActive(false);
             else
             {

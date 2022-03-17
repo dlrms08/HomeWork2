@@ -28,7 +28,7 @@ public class BulletScript : MonoBehaviour
     {
         currentLife = maxlife;
 
-        if (GameManager.instance.skillInfos[3].enable && bulletType != BulletType.Enemy)
+        if (GameManager.instance.skills[3] && bulletType != BulletType.Enemy)
             CheckDirection();    
     }
 

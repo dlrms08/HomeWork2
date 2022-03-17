@@ -56,7 +56,10 @@ public class PlayerManager : MonoBehaviour
         {
             GameObject enemy = GameSupport.FindNearestObjectByTag("Enemy", transform);
             if (enemy == null)
+            {
+                GameManager.instance.GameOver();
                 return;
+            }
 
             if (!enemy.GetComponent<EnemyManager>().canAttack)
                 return;
@@ -66,12 +69,12 @@ public class PlayerManager : MonoBehaviour
             if ((Time.time > nextFire))
             {
                 nextFire = Time.time + fireRate;
-                if (GameManager.instance.skillInfos[0].enable)
+                if (GameManager.instance.skills[0])
                     FireDouble();
                 else
                     FireBasic();
 
-                if (GameManager.instance.skillInfos[1].enable)
+                if (GameManager.instance.skills[1])
                     FireThree();
             }
         }
